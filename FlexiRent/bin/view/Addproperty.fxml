@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="860.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPropertyController">
+   <bottom>
+      <HBox prefHeight="63.0" prefWidth="584.0" spacing="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="submit" mnemonicParsing="false" onAction="#submitdata" text="Submit">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancel" mnemonicParsing="false" onAction="#goback" text="Go To Main Page">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="120.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox fillWidth="false" prefHeight="271.0" prefWidth="267.0" spacing="15.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Street Number:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="snum" prefHeight="26.0" prefWidth="263.0" />
+            <Label text="Street Name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="sname" prefHeight="28.0" prefWidth="263.0" />
+            <Label text="Surburb:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="surburb" prefHeight="27.0" prefWidth="265.0" />
+            <Label text="Property Type:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="addpro" onAction="#comboChanged" prefHeight="26.0" prefWidth="150.0" />
+            <Label text="Description:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="desc" prefHeight="113.0" prefWidth="327.0" />
+            <Label text="Image Path (Optional):">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="path" prefHeight="27.0" prefWidth="262.0" />
+            <Label fx:id="roomnum" prefHeight="35.0" prefWidth="192.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="56.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="bednum" layoutX="3.0" layoutY="1.0" prefHeight="27.0" prefWidth="161.0" />
+                  <DatePicker fx:id="last" layoutX="3.0" layoutY="1.0" />
+               </children>
+            </Pane>
+            <Label fx:id="success" text="Add property succefully!" textFill="#f20404">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets left="200.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

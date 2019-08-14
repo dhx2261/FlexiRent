@@ -1,0 +1,1 @@
+create table RENTAL_RECORD (propertyID varchar(10), customerID varchar(10), rentdate date, erdate date, ardate date, rentalfees double, latefees double)

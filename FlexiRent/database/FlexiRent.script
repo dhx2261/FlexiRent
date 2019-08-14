@@ -1,0 +1,66 @@
+SET DATABASE UNIQUE NAME HSQLDB65D294EC20
+SET DATABASE GC 0
+SET DATABASE DEFAULT RESULT MEMORY ROWS 0
+SET DATABASE EVENT LOG LEVEL 0
+SET DATABASE TRANSACTION CONTROL LOCKS
+SET DATABASE DEFAULT ISOLATION LEVEL READ COMMITTED
+SET DATABASE TRANSACTION ROLLBACK ON CONFLICT TRUE
+SET DATABASE TEXT TABLE DEFAULTS ''
+SET DATABASE SQL NAMES FALSE
+SET DATABASE SQL REFERENCES FALSE
+SET DATABASE SQL SIZE TRUE
+SET DATABASE SQL TYPES FALSE
+SET DATABASE SQL TDC DELETE TRUE
+SET DATABASE SQL TDC UPDATE TRUE
+SET DATABASE SQL CONCAT NULLS TRUE
+SET DATABASE SQL UNIQUE NULLS TRUE
+SET DATABASE SQL CONVERT TRUNCATE TRUE
+SET DATABASE SQL AVG SCALE 0
+SET DATABASE SQL DOUBLE NAN TRUE
+SET FILES WRITE DELAY 500 MILLIS
+SET FILES BACKUP INCREMENT TRUE
+SET FILES CACHE SIZE 10000
+SET FILES CACHE ROWS 50000
+SET FILES SCALE 32
+SET FILES LOB SCALE 32
+SET FILES DEFRAG 0
+SET FILES NIO TRUE
+SET FILES NIO SIZE 256
+SET FILES LOG TRUE
+SET FILES LOG SIZE 50
+CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
+ALTER USER SA SET LOCAL TRUE
+CREATE SCHEMA PUBLIC AUTHORIZATION DBA
+SET SCHEMA PUBLIC
+CREATE MEMORY TABLE PUBLIC.RENTAL_RECORD(RECORDID VARCHAR(100) PRIMARY KEY,PROPERTYID VARCHAR(100),CUSTOMERID VARCHAR(100),RENTDATE DATE,ERDATE DATE,ARDATE DATE,RENTALFEES DOUBLE,LATEFEES DOUBLE)
+CREATE MEMORY TABLE PUBLIC.RENTAL_PROPERTY(PROPERTYID VARCHAR(20) PRIMARY KEY,SNUM INTEGER,SNAME VARCHAR(40),SUBURB VARCHAR(40),TYPE VARCHAR(20),BEDNUM INTEGER,STATUS VARCHAR(20),LASTMAINTANCE DATE,DESCRIPTION VARCHAR(1000),IMAGE VARCHAR(40))
+ALTER SEQUENCE SYSTEM_LOBS.LOB_ID RESTART WITH 4
+SET DATABASE DEFAULT INITIAL SCHEMA PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.SQL_IDENTIFIER TO PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.YES_OR_NO TO PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.TIME_STAMP TO PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.CARDINAL_NUMBER TO PUBLIC
+GRANT USAGE ON DOMAIN INFORMATION_SCHEMA.CHARACTER_DATA TO PUBLIC
+GRANT DBA TO SA
+SET SCHEMA SYSTEM_LOBS
+INSERT INTO BLOCKS VALUES(3,2147483644,0)
+INSERT INTO LOBS VALUES(0,1,0,1)
+INSERT INTO LOBS VALUES(1,1,0,2)
+INSERT INTO LOBS VALUES(2,1,0,3)
+INSERT INTO LOB_IDS VALUES(1,14,0,40)
+INSERT INTO LOB_IDS VALUES(2,14,0,40)
+INSERT INTO LOB_IDS VALUES(3,15,0,40)
+SET SCHEMA PUBLIC
+INSERT INTO RENTAL_RECORD VALUES('123_ASSMEL_c1_01092018','123_ASSMEL','c1','2018-09-01','2018-09-04','2018-09-01',0.0E0,0.0E0)
+INSERT INTO RENTAL_RECORD VALUES('123_ASSMEL_c3_02092018','123_ASSMEL','c3','2018-09-02','2018-09-06','2018-10-30',0.0E0,0.0E0)
+INSERT INTO RENTAL_RECORD VALUES('123_ASSMEL_c4_29112017','123_ASSMEL','c4','2017-11-29','2017-12-02',NULL,0.0E0,0.0E0)
+INSERT INTO RENTAL_RECORD VALUES('A_332CSSOU_c5_05102018','A_332CSSOU','c5','2018-10-05','2018-10-08','2018-10-07',0.0E0,0.0E0)
+INSERT INTO RENTAL_RECORD VALUES('A_54HSTHO_c1_12102018','A_54HSTHO','c1','2018-10-12','2018-10-15','2018-10-16',630.0E0,241.5E0)
+INSERT INTO RENTAL_RECORD VALUES('A_54HSTHO_c2_04102018','A_54HSTHO','c2','2018-10-04','2018-10-08','2018-10-24',0.0E0,0.0E0)
+INSERT INTO RENTAL_PROPERTY VALUES('123_ASSMEL',123,'Swanston Street','Melbourne','Apartment',3,'renting',NULL,'Metro Park West provides its residents with incredible access to all the CBD has on offer. Find Flagstaff Gardens, the Queen Victoria Market and Melbourne Central all within walking distance. This apartment complex creates seamless access to all areas of Melbourne CBD, and further public transport convenience. ','Image/p1.jpg')
+INSERT INTO RENTAL_PROPERTY VALUES('A_250SSMEL',250,'Spencer Street','Melbourne','Apartment',2,'available',NULL,'As the final chapter of West Side Place, The Park Release celebrates the beautiful public gardens that connect this new CBD precinct, along with the striking views across the evergreen Flagstaff Gardens.\u000aTaking pride of place within Melbourne\u2019s fastest selling new residential precinct, The Park Release presents buyers with the final opportunity to live at the home of The Ritz-Carlton hotel, where the world\u2019s elite come to stay. \u000aThis city block precinct will provide residents access to a remarkable array of recreation and leisure spaces.\u000a','Image/5.jpg')
+INSERT INTO RENTAL_PROPERTY VALUES('A_332CSSOU',332,'City Street','Southbank','Apartment',3,'available',NULL,'With a rich legacy and quality heritage, Hope Grange has served the Pitson family for almost 150 years. William Pitson and his wife, Sarah, came to Bagshot and started farming in 1872. In 1902, the character-filled homestead was built, with many of the original features being retained over the years. The current owner bought the property from his father in 1966, making him, and his son, the fourth and fifth generation of the family to farm the prosperous Bagshot land.','Image/south.jpg')
+INSERT INTO RENTAL_PROPERTY VALUES('A_54HSTHO',54,'High Street','Thomastown','Apartment',2,'available',NULL,'Nestled at the rear of the block and accessed via the service road, you can treat yourself to a fashionable lifestyle with this immaculately presented home; high in style and low on maintenance. A sensational first home, investment opportunity or downsizer for active retirees; the single-level interior showcases a generous open plan living room and dining area, overlooking a sophisticated kitchen equipped with a full complement of premium Fisher & Paykel appliances, a stone island breakfast bar and excellent storage options. ','Image/Tho.jpg')
+INSERT INTO RENTAL_PROPERTY VALUES('A_67SSRIC',67,'Swan Street','Richmond','Apartment',1,'available',NULL,'New to the rental market is this as new modern and spacious townhouse located in the highly sought after Gardens Estate featuring beautiful lakeside views and within walking distance to schools, shops, parks, public transport and more. Ground floor features a double remote controlled garage with internal entry, an additional storage room plus 2 extra off street parking areas. A good size laundry, powder room, large open plan living overlooking the gourmet kitchen with gas cooktop, electric oven, dishwasher and stone bench tops. ','Image/rich.jpg')
+INSERT INTO RENTAL_PROPERTY VALUES('P_12YSSOU',12,'Yarra Street','South Yarra','PremiumSuite',3,'available','2018-10-20','Luxuriously appointed and framing stunning city views, this dramatic, two bedroom plus study, split-level property on the top floor of the highly-coveted SXY building, offers exceptional "lock and leave" credentials and first class investment returns. An impressive suite of residential facilities includes a pool, communal courtyard, gymnasium, and conference room to compliment this iconic location just metres from Toorak Rd, Chapel St and South Yarra Train Station.\u000aSomething to behold, the top-floor open-plan kitchen / meals / living is equipped with premium stainless steel appliances and Caesar Stone benches as it flows majestically to an entertainers" balcony with some of Melbourne"s finest views. The master bedroom is pure indulgence with a broad twin basin ensuite, whilst the home also features an alcove study, secure intercom entry, central heating and cooling, as well as basement parking.','Image/yarra.jpg')
+INSERT INTO RENTAL_PROPERTY VALUES('P_8ACCAN',8,'Anderson Court','Canadian','PremiumSuite',3,'available','2018-10-13','Situated in an ideal location in ever popular Canadian is this wonderful home with spacious living and a generous yard. Stepping inside you are greeted by a large open plan kitchen, meals and living area which also opens onto a generous formal lounge. The kitchen features a WIP as well as dishwasher. There are three generous bedrooms with en-suite and WIR to the master as well as BIR"s to the other bedrooms. In addition there is a separate study. The main bathroom features a bath and shower. The home is centrally heated throughout along with cooling. Outside is a great DLUG with significant storage space. There is also a rear pergola/decking ideal for outdoor entertaining especially in the warmer months. Set on a generous block this home will be highly sought after.','Image/image3.jpg')

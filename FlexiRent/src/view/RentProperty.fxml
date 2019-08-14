@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RentPropertyController">
+   <center>
+      <VBox prefHeight="465.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="35.0" prefWidth="416.0" text="Enter customer ID:" textAlignment="CENTER">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="customerfi" onAction="#customer" prefHeight="27.0" prefWidth="496.0" />
+            <Label text="Choose Rent Date: ">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="rentdatefi" />
+            <Label text="How many days: ">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <TextField fx:id="daysfi" onAction="#numofday" />
+            <Pane prefHeight="130.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="submit" layoutX="128.0" layoutY="28.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+                  <Button fx:id="cancel" layoutX="408.0" layoutY="28.0" mnemonicParsing="false" onAction="#cancel" text="Go To Main Pge" />
+                  <Label fx:id="status" layoutX="266.0" layoutY="81.0" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

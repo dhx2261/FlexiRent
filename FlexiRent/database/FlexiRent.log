@@ -1,0 +1,31 @@
+/*C19*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C25*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C26*/SET SCHEMA PUBLIC
+DELETE FROM RENTAL_PROPERTY WHERE PROPERTYID='P_12YSSOU'
+INSERT INTO RENTAL_PROPERTY VALUES('P_12YSSOU',12,'Yarra Street','South Yarra','PremiumSuite',3,'maintenance','2018-10-20','Luxuriously appointed and framing stunning city views, this dramatic, two bedroom plus study, split-level property on the top floor of the highly-coveted SXY building, offers exceptional "lock and leave" credentials and first class investment returns. An impressive suite of residential facilities includes a pool, communal courtyard, gymnasium, and conference room to compliment this iconic location just metres from Toorak Rd, Chapel St and South Yarra Train Station.\u000aSomething to behold, the top-floor open-plan kitchen / meals / living is equipped with premium stainless steel appliances and Caesar Stone benches as it flows majestically to an entertainers" balcony with some of Melbourne"s finest views. The master bedroom is pure indulgence with a broad twin basin ensuite, whilst the home also features an alcove study, secure intercom entry, central heating and cooling, as well as basement parking.','Image/yarra.jpg')
+COMMIT
+DISCONNECT
+/*C27*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C33*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C34*/SET SCHEMA PUBLIC
+DELETE FROM RENTAL_PROPERTY WHERE PROPERTYID='P_12YSSOU'
+INSERT INTO RENTAL_PROPERTY VALUES('P_12YSSOU',12,'Yarra Street','South Yarra','PremiumSuite',3,'maintenance','2018-10-13','Luxuriously appointed and framing stunning city views, this dramatic, two bedroom plus study, split-level property on the top floor of the highly-coveted SXY building, offers exceptional "lock and leave" credentials and first class investment returns. An impressive suite of residential facilities includes a pool, communal courtyard, gymnasium, and conference room to compliment this iconic location just metres from Toorak Rd, Chapel St and South Yarra Train Station.\u000aSomething to behold, the top-floor open-plan kitchen / meals / living is equipped with premium stainless steel appliances and Caesar Stone benches as it flows majestically to an entertainers" balcony with some of Melbourne"s finest views. The master bedroom is pure indulgence with a broad twin basin ensuite, whilst the home also features an alcove study, secure intercom entry, central heating and cooling, as well as basement parking.','Image/yarra.jpg')
+COMMIT
+/*C35*/SET SCHEMA PUBLIC
+DELETE FROM RENTAL_PROPERTY WHERE PROPERTYID='P_12YSSOU'
+INSERT INTO RENTAL_PROPERTY VALUES('P_12YSSOU',12,'Yarra Street','South Yarra','PremiumSuite',3,'available','2018-10-13','Luxuriously appointed and framing stunning city views, this dramatic, two bedroom plus study, split-level property on the top floor of the highly-coveted SXY building, offers exceptional "lock and leave" credentials and first class investment returns. An impressive suite of residential facilities includes a pool, communal courtyard, gymnasium, and conference room to compliment this iconic location just metres from Toorak Rd, Chapel St and South Yarra Train Station.\u000aSomething to behold, the top-floor open-plan kitchen / meals / living is equipped with premium stainless steel appliances and Caesar Stone benches as it flows majestically to an entertainers" balcony with some of Melbourne"s finest views. The master bedroom is pure indulgence with a broad twin basin ensuite, whilst the home also features an alcove study, secure intercom entry, central heating and cooling, as well as basement parking.','Image/yarra.jpg')
+COMMIT
+DISCONNECT
+/*C36*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C42*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C34*/DISCONNECT
+/*C43*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C49*/SET SCHEMA PUBLIC
+DISCONNECT
